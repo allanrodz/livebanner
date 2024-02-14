@@ -1,0 +1,20 @@
+
+#now-playing-banner {
+    width: 100%;
+    background-color: #e67e23;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+}
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+#now-playing-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
